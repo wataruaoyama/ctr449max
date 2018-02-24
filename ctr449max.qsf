@@ -1,0 +1,108 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 18:02:31  January 20, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		ctr449max_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX V"
+set_global_assignment -name DEVICE 5M160ZE64A5
+set_global_assignment -name TOP_LEVEL_ENTITY ctr449
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:02:31  JANUARY 20, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION 16.0.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 125
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR "-1"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_12 -to BCK_DSDCLK
+set_location_assignment PIN_61 -to BCLK
+set_location_assignment PIN_55 -to CCLK
+set_location_assignment PIN_54 -to CDTI
+set_location_assignment PIN_9 -to CLK_10M
+set_location_assignment PIN_36 -to CLK_22M
+set_location_assignment PIN_46 -to CLK_24M
+set_location_assignment PIN_2 -to CLK_SEL
+set_location_assignment PIN_1 -to CPOK
+set_location_assignment PIN_56 -to CSN
+set_location_assignment PIN_60 -to DATA
+set_location_assignment PIN_21 -to DEM0
+set_location_assignment PIN_22 -to DEM1
+set_location_assignment PIN_27 -to DSDD
+set_location_assignment PIN_52 -to DZFR
+set_location_assignment PIN_35 -to ENCLK_22M
+set_location_assignment PIN_45 -to ENCLK_24M
+set_location_assignment PIN_18 -to LED_96K
+set_location_assignment PIN_20 -to LED_DSD
+set_location_assignment PIN_19 -to LED_PCM
+set_location_assignment PIN_59 -to LRCK
+set_location_assignment PIN_10 -to LRCK0
+set_location_assignment PIN_63 -to MCLK
+set_location_assignment PIN_51 -to MUTE
+set_location_assignment PIN_29 -to RESET
+set_location_assignment PIN_30 -to SC0
+set_location_assignment PIN_31 -to SC1
+set_location_assignment PIN_32 -to SC2
+set_location_assignment PIN_3 -to SCK
+set_location_assignment PIN_24 -to SD
+set_location_assignment PIN_25 -to SLOW
+set_location_assignment PIN_26 -to SSLOW
+set_location_assignment PIN_4 -to XDSD
+set_location_assignment PIN_49 -to PHA
+set_location_assignment PIN_50 -to PHB
+set_location_assignment PIN_13 -to LRCK_DSDR
+set_location_assignment PIN_11 -to DATA_DSDL
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SC0
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SC1
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SC2
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SD
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SLOW
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SSLOW
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PHA
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PHB
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to DEM0
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to DEM1
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to DSDD
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to DZFR
+set_global_assignment -name VHDL_FILE src/regctr.vhd
+set_global_assignment -name VHDL_FILE src/detect_fs.vhd
+set_global_assignment -name VHDL_FILE src/ctr449_test.vhd
+set_global_assignment -name VHDL_FILE src/ctr449.vhd
+set_global_assignment -name VHDL_FILE src/clkgen.vhd
+set_global_assignment -name VHDL_FILE src/attcnt.vhd
+set_location_assignment PIN_5 -to MUTE_IN
+set_location_assignment PIN_62 -to PDN
