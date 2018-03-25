@@ -86,8 +86,8 @@ begin
 	LED_PCM <= not XDSD when RESET = '1' else '1';
 	LED_96K <= not ov96k when RESET = '1' else '1';
 	
-	iMUTE <= RESET and DZFR;
-	MUTE <= iMUTE when RESET = '0' else 'Z';
+	MUTE <= 'Z' when (RESET and DZFR and not MUTE_IN) = '1' else '0';
+--	MUTE <= 'Z' when RESET = '1' else '0';
 	PDN <= RESET;
 
 end RTL;

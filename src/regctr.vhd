@@ -226,13 +226,13 @@ process(regaddrcnt,rstdp,SD,DEM1,DEM0,XDSD,SLOW,SSLOW,SC0,SC1,SC2,vlmbp,ATT) beg
 		regd(0) <= not SSLOW;	--SSLOW
 	elsif(regaddrcnt = "0110") then
 		regd(7) <= '1';	--DDM  Change "0" to "1" at Revision 1.1
-		regd(6) <= '0';	--DML
-		regd(5) <= '0';	--DMR
+		regd(6) <= '1';	--DML
+		regd(5) <= '1';	--DMR
 		regd(4) <= '0';	--DMC
 		regd(3) <= '0';	--DMRE
 		regd(2) <= '0';	--DSDD1
 		regd(1) <= vlmbp;	--DSDD0
-		regd(0) <= '1';	--DSDSEL
+		regd(0) <= '0';	--DSDSEL
 	elsif(regaddrcnt = "0111") then
 		regd(7) <= '0';
 		regd(6) <= '0';
@@ -259,7 +259,7 @@ process(regaddrcnt,rstdp,SD,DEM1,DEM0,XDSD,SLOW,SSLOW,SC0,SC1,SC2,vlmbp,ATT) beg
 		regd(3) <= '0';
 		regd(2) <= '0';	--DSDPATH at ak4497
 		regd(1) <= '1';	--DSDF
-		regd(0) <= '0';	--DSDSEL1
+		regd(0) <= '1';	--DSDSEL1
 -- From resister address "0AH" to "15H" is about for ak4497
 -- Added in the revision 1.2
 		elsif(regaddrcnt = "1010") then
